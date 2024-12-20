@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Maform Technology logo</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1" />
+    <style>
+body {background-color: rgb(235,233,232);}
+.maform{
+  outline:0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: transform 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+          transition: transform 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+.maform:focus {
+    outline:0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.maform .m4 {
+  -webkit-transform: rotate3d(1, 0, 0, 0deg);
+          transform: rotate3d(1, 0, 0, 0deg);
+	-webkit-transition: transform 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	        transition: transform 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+.maform:focus .m4 {
+	-webkit-transform: rotate3d(1, 0, 0, -180deg);
+          transform: rotate3d(1, 0, 0, -180deg);
+}
+
+.maform .leg {
+  -webkit-transform: rotate3d(1, 1, 0, 0deg);
+          transform: rotate3d(1, 1, 0, 0deg);
+	-webkit-transition: transform 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	        transition: transform 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+.maform:focus .leg {
+   -webkit-transform: rotate3d(1, 1, 0, -180deg);
+           transform: rotate3d(1, 1, 0, -180deg);
+}
+
+.maform .m1 {
+  -webkit-transform: rotate3d(1, 0, 0, 0deg);
+          transform: rotate3d(1, 0, 0, 0deg);
+	-webkit-transition: transform 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	        transition: transform 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+.maform:focus .m1 {
+  -webkit-transform: rotate3d(1, 0, 0, -180deg);
+          transform: rotate3d(1, 0, 0, -180deg);
+}
+
+.3d {perspective: 500px;}
+
+.m1, .m2, .m3, .m4 {
+  filter: drop-shadow(0 0 2px rgb(0 0 0 / 0.1 ));
+}
+
+.float {
+position:fixed;
+  top:0;
+  right:0;
+  margin-top:0;
+}
+
+.none { display:none;
+
+</style>
+  </head>
+<body>
+
+<script>/* bad div wrapper for 3d effects:
+transform origins should be defined in 
+
+<div class="3d">
+<div class="float">
+<div class="maform float" tabindex="0" transform-origin="110 0">
+<div class="leg float" transform-origin="0 20">
+<div class="m1 float" transform-origin="10 10">
+<svg width="80" viewbox="-10 -20 110 200" fill="white" stroke="black" stroke-width="1" stroke-linejoin="round">
+<path d="M10 10 L50 10 L60 20 L40 40 Z"/>
+</svg></div>
+<div class="m2 float">
+<svg width="80" viewbox="-10 -20 110 200" fill="white" stroke="black" stroke-width="1" stroke-linejoin="round">
+<path d="M10 10 L50 10 L20 40 L0 20 Z"/>
+</svg></div>
+
+</div>
+<div class="m3 float">
+<svg width="80" viewbox="-10 -20 110 200" fill="white" stroke="black" stroke-width="1" stroke-linejoin="round">
+<path d="M20 0 L60 0 L20 40 L0 20 Z"/>
+</svg></div>
+<div class="m4 float">
+<svg width="80" viewbox="-10 -20 110 200" fill="white" stroke="black" stroke-width="1" stroke-linejoin="round">
+<path d="M20 0 L60 0 L80 20 L60 40 Z"/>
+</svg></div>
+
+</div>
+
+</div>
+</div>
+*/
+</script>
+
+<div class="3d">
+<svg class="float" height="200" viewbox="-110 -20 210 200" fill="rgba(255,255,255,1)" stroke="black" stroke-width="1" stroke-linejoin="round">
+<g class="maform" tabindex="0" transform-origin="20 0">
+<g class="leg" transform-origin="0 20">
+<path class="m1" transform-origin="10 10" d="M10 10 L50 10 L60 20 L40 40 Z"/>
+<path class="m2" d="M10 10 L50 10 L20 40 L0 20 Z"/>
+</g>
+<path class="m3" d="M20 0 L60 0 L20 40 L0 20 Z"/>
+<path class="m4" d="M20 0 L60 0 L80 20 L60 40 Z"/>
+</g>
+</svg>
+</div>
+
+icon size: <br>
+<svg width="20" style="background-color:black" viewbox="-10 -50 100 150" fill="rgb(255,255,255)" stroke="rgb(0,0,0)" stroke-width="5" stroke-linejoin="round">
+<path d="M10 10 L50 10 L60 20 L40 40 Z"/>
+<path d="M10 10 L50 10 L20 40 L0 20 Z"/>
+<path d="M20 0 L60 0 L20 40 L0 20 Z"/>
+<path d="M20 0 L60 0 L80 20 L60 40 Z"/>
+</svg>
+
+<br><br><br><br>
+<br> base: <br>
+<svg width="250" viewbox="-10 -10 100 100" fill="rgba(255,255,255,0.85)" stroke="black" stroke-width="1" stroke-linejoin="round">
+<path d="M10 10 L50 10 L60 20 L40 40 Z"/>
+<path d="M10 10 L50 10 L20 40 L0 20 Z"/>
+<path d="M20 0 L60 0 L20 40 L0 20 Z"/>
+<path d="M20 0 L60 0 L80 20 L60 40 Z"/>
+</svg>
+
+<br> flat:<br>
+<svg width="250" viewbox="-10 -10 100 100" fill="none" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+<mask id="mask-round">
+<path fill="white" d="M20 0 L60 0 L80 20 L60 40 L50 30 L40 40 L30 30 L20 40 L0 20 Z">
+</path>
+<path stroke="black" d="M30 30 L40 40 L50 30"/>
+<path stroke="black" d="M17 3 Q20 0 24 0
+  L56 0 
+  Q60 0 63 3
+  L80 20 L60 40 L23 3
+  Q20 0 17 3
+  L0 20 L20 40 L40 20"/>
+</mask>
+<g mask="url(#mask-round)">
+<path fill="black" d="M20 0 L60 0 L80 20 L60 40 L50 30 L40 40 L30 30 L20 40 L0 20 Z">
+</path>
+</g>
+</svg>
+
+<br>
+<svg width="50" viewbox="-10 -10 100 100" fill="none" stroke="none" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<mask id="mask-rounded">
+<path fill="white" d="M14 6 Q20 0 28 0 L56 0 Q60 0 66 6 L80 20 L60 40 L50 30 L40 40 L30 30 L20 40 L0 20 Z">
+</path>
+<path stroke="black" d="M30 30 L40 40 L50 30"/>
+<path stroke="black" d="M14 6 Q20 0 28 0
+  L56 0 
+  Q60 0 66 6
+  L80 20 L60 40 L26 6
+  Q20 0 14 6
+  L0 20 L20 40 L40 20"/>
+</mask>
+<g mask="url(#mask-rounded)">
+<path fill="black" d="M20 0 L60 0 L80 20 L60 40 L50 30 L40 40 L30 30 L20 40 L0 20 Z">
+</path>
+</g>
+</svg>
+
+
+
+<br>line:<br>
+<svg width="250" viewbox="-10 -10 100 100" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+<path d="M32 32 L40 40 L48 32"/>
+<path d="M24 0 L56 0 
+  Q60 0 63 3
+  L80 20 L60 40 L23 3
+  Q20 0 17 3
+  L0 20 L20 40 L38 22"/>
+</svg>
+
+<br>
+<svg width="50" viewbox="-10 -10 100 100" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+<path d="M34 34 L40 40 L46 34"/>
+<path d="M28 0 L52 0 
+  Q60 0 66 6
+  L80 20 L60 40 L26 6
+  Q20 0 14 6
+  L0 20 L20 40 L36 24"/>
+</svg>
+
+
+<br>outline:<br>
+<svg width="250" viewbox="-10 -10 100 100" fill="none" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+<path fill="black" d="M20 0 L60 0 L80 20 L60 40 L50 30 L40 40 L30 30 L20 40 L0 20 Z">
+</path>
+<path stroke="rgb(85% 10 20)" d="M30 30 L40 40 L50 30"/>
+<path stroke="rgb(85% 10 20)" d="M17 3 Q20 0 24 0
+  L56 0 
+  Q60 0 63 3
+  L80 20 L60 40 L23 3
+  Q20 0 17 3
+  L0 20 L20 40 L40 20"/>
+</svg>
+
+<br>sharp flat and line:<br>
+<svg width="100" viewbox="-10 -10 100 100" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round">
+<mask id="mask-square">
+<path fill="white" stroke="black" d="M10 10 L50 10 L60 20 L40 40 Z"/>
+<path fill="white" stroke="black" d="M10 10 L50 10 L20 40 L0 20 Z"/>
+<path fill="white" stroke="black" d="M20 0 L60 0 L20 40 L0 20 Z"/>
+<path fill="white" stroke="black" d="M20 0 L60 0 L80 20 L60 40 Z"/>
+</mask>
+<g mask="url(#mask-square)">
+<path d="M10 10 L50 10 L60 20 L40 40 Z"/>
+<path d="M10 10 L50 10 L20 40 L0 20 Z"/>
+<path d="M20 0 L60 0 L20 40 L0 20 Z"/>
+<path d="M20 0 L60 0 L80 20 L60 40 Z"/>
+</g>
+</svg>
+
+<br>
+<svg width="50" viewbox="-10 -10 100 100" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+<path d="M33 33 L40 40 L47 33"/>
+<path d="M26 0 L60 0 L80 20 L60 40 L20 0
+  L0 20 L20 40 L37 23"/>
+</svg>
+
+</body>
+</html>

@@ -48,8 +48,8 @@ body {background-color: rgb(235,233,232);}
 	        transition: transform 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 .maform:focus .m1 {
-  -webkit-transform: rotate3d(1, 0, 0, -180deg);
-          transform: rotate3d(1, 0, 0, -180deg);
+  -webkit-transform: rotate3d(1, 0, 0, 180deg);
+          transform: rotate3d(1, 0, 0, 180deg);
 }
 
 .3d {perspective: 500px;}
@@ -108,8 +108,8 @@ transform origins should be defined in
 <svg class="float" height="200" viewbox="-110 -20 210 200" fill="rgba(255,255,255,1)" stroke="black" stroke-width="1" stroke-linejoin="round">
 <g class="maform" tabindex="0" transform-origin="20 0">
 <g class="leg" transform-origin="0 20">
-<path class="m1" transform-origin="10 10" d="M10 10 L50 10 L60 20 L40 40 Z"/>
 <path class="m2" d="M10 10 L50 10 L20 40 L0 20 Z"/>
+<path class="m1" transform-origin="10 10" d="M10 10 L50 10 L60 20 L40 40 Z"/>
 </g>
 <path class="m3" d="M20 0 L60 0 L20 40 L0 20 Z"/>
 <path class="m4" d="M20 0 L60 0 L80 20 L60 40 Z"/>
